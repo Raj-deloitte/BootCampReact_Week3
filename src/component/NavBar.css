@@ -1,4 +1,8 @@
 .navbar {
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  z-index: 2;
   background-color: black;
   height: 80px;
   width: 100%;
@@ -7,6 +11,7 @@
   align-items: center;
   padding-left: 30px;
 }
+
 .logo {
   margin-left: 2%;
 }
@@ -27,4 +32,3 @@
   border-radius: 50%;
   background-color: grey;
 }
-

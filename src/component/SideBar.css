@@ -1,5 +1,44 @@
-.sidebar {
-  width: 3%;
-  height: 1440px;
+.side-navbar {
+  width: 80px;
+  height: 100%;
   background-color: white;
+  color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-navbar.expanded {
+  width: 12%;
+}
+
+.side-navbar .icon {
+  cursor: pointer;
+}
+.learning{
+  width: 100px;
+  margin:10px;
+  margin-bottom: 30px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 250px;
+  padding: 30%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SideNavbar.css - Sticky position when scrolled */
+@media screen and (min-width: 768px) {
+  .side-navbar {
+    position: fixed;
+    top: 80px;
+  }
 }
