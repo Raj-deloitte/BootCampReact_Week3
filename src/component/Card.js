@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Card.css";
 import Button from "./Button";
 
-
-const Card=(props)=> {
-  const [enroll,setEnroll]=useState(false);
-  const handleClick=()=>{
-    setEnroll(!enroll);
-  }
-  let overlay_text=`overlay_text ${props.seat}`;
+const Card = (props) => {
+  const [isEnrolled, setIsEnrolled] = useState(false);
+  const handleEnroll = () => {
+    setIsEnrolled(!isEnrolled);
+    props.enroll(props.id);
+  };
+  let overlay_text = `overlay_text ${props.seat}`;
   return (
     <>
       <div className="card_container">
@@ -38,16 +38,18 @@ const Card=(props)=> {
           <div className="course_row4_col">
             <img src="./asset/duration.svg" />
             <div>
-            <div  className="course_row4_col2_first">Course Duration</div>
-            <div>40 Days</div></div>
+              <div className="course_row4_col2_first">Course Duration</div>
+              <div>40 Days</div>
+            </div>
           </div>
           <div>
-            <Button type={props.type} onClick={handleClick}>
-            {enroll?"Enrolled":"Enroll"}</Button>
+            <Button type={props.type} onClick={handleEnroll} disabled={isEnrolled}>
+              {isEnrolled ? "Enrolled" : "Enroll"}
+            </Button>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 export default Card;

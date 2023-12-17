@@ -1,15 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Button.css'; 
+import React from "react";
+import PropTypes from "prop-types";
+import "./Button.css";
 
 const Button = ({ type, onClick, children }) => {
   let buttonClass = `button ${type}`;
-  if(children === "Enrolled"){
-    buttonClass= 'button enrolled';
+  if (children === "Enrolled") {
+    buttonClass = "button enrolled";
   }
 
   return (
-    <button className={buttonClass} onClick={onClick}>
+    <button
+      className={buttonClass }
+      onClick={onClick}
+    >
       {children}
     </button>
   );

@@ -23,11 +23,20 @@ const Recommended = () => {
       setCourses(filteredCourses);
       setSort(!sort);
     }
-    if(!sort){
+    if (!sort) {
       console.log("entered false sorting");
       setCourses(initialcourses);
       setSort(!sort);
     }
+  };
+  const enroll = (courseId) => {
+    setCourses((prevCourses) =>
+      prevCourses.map((course) =>
+        course.id === courseId
+          ? { ...course, number: Math.max(0, course.number - 1) }
+          : course
+      )
+    );
   };
   return (
     <>
@@ -42,7 +51,7 @@ const Recommended = () => {
         </div>
         <div className="recommend_container">
           {courses.map((course, index) => (
-            <Card key={index} {...course} />
+            <Card key={index} {...course} enroll={enroll} />
           ))}
         </div>
       </div>
