@@ -1,16 +1,16 @@
 .card_container {
   position: relative;
-  width: 650px;
+  width: 30%;
   height: 480px;
   background-color: white;
   border-radius: 8px;
-  margin: 10px 25px 20px 0;
+  margin: 10px 5px 20px 0;
   padding: 25px;
 }
 .course_img {
   border-radius: 8px;
   margin-bottom: 5%;
-  width: 410px;
+  width: 380px;
 }
 .overlay_text {
   position: absolute;
