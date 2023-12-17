@@ -1,0 +1,30 @@
+.navbar {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+.logo {
+  margin-left: 2%;
+}
+.right-side-nav {
+  display: flex;
+  color: white;
+  width: 15%;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.notification_bell {
+  color: white;
+}
+.profile_image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: grey;
+}
+

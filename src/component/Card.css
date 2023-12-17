@@ -1,0 +1,72 @@
+.card_container {
+  position: relative;
+  width: 650px;
+  height: 480px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 10px 25px 20px 0;
+  padding: 25px;
+}
+.course_img {
+  border-radius: 8px;
+  margin-bottom: 5%;
+  width: 410px;
+}
+.overlay_text {
+  position: absolute;
+  right: 5%;
+  left: 55%;
+  bottom: 85%;
+  width: 38%;
+  padding: 1% 2%;
+  border-radius: 4px;
+}
+.available{
+  color: #86bc24;
+  background-color: #dfeacc;
+}
+.limited{
+  color:#E86F00;
+  background-color: #EAE1CC;
+}
+.over{
+  color: #C10D0D;
+  background-color:#EACCCC ;
+}
+
+.course_title {
+  font-size: 140%;
+  line-height: 1.1;
+  margin-bottom: 3%;
+}
+.course_row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course_date {
+  color: grey;
+  font-weight: 300;
+}
+.course_row3_col2 {
+  display: flex;
+  justify-content: space-around;
+  color: #f1870d;
+  width: 40%;
+}
+.check_circle {
+  margin-right: 2%;
+}
+.course_row4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+.course_row4_col {
+  display: flex;
+}
+.course_row4_col2_first {
+  color: grey;
+  font-weight: 300;
+}

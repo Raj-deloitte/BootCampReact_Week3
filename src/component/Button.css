@@ -1,0 +1,21 @@
+/* Button.css */
+.button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.success {
+  background-color: #86bc24;
+  color: #fff;
+}
+
+.error {
+  background-color: grey;
+  color: #fff;
+}
+
+.enrolled {
+  background-color: whitesmoke;
+}

@@ -1,0 +1,9 @@
+.recommend {
+  width: 1440px;
+  height: 1000px;
+  margin-left: 180px;
+}
+.recommend_container {
+  display: flex;
+  justify-content: space-between;
+}
