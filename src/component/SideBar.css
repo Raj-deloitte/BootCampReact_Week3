@@ -3,14 +3,6 @@
   height: 100%;
   background-color: white;
   color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  position: fixed;
-  top: 80px;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
 }
 
 .side-navbar.expanded {
@@ -20,9 +12,9 @@
 .side-navbar .icon {
   cursor: pointer;
 }
-.learning{
+.learning {
   width: 100px;
-  margin:10px;
+  margin: 10px;
   margin-bottom: 30px;
 }
 .icon {

@@ -10,10 +10,10 @@ function App() {
     <>
       <div className="app">
         <NavBar />
-        <SideBar />
+        <SideBar className="sticky_div"/>
         <div className="main-container">
           <Explore />
-          <Learning/>
+          <Learning />
           <Recommended />
         </div>
       </div>

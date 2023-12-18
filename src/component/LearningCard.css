@@ -30,6 +30,16 @@
   .learning_col2_row1_para {
     color: grey;
   }
+  .progress_bar_container{
+    height: 4px;
+    background-color: #ddd;
+    margin-top: 10px;
+  }
+  .progress_bar{
+    height: 100%;
+    width: 10%;
+    background-color:#86BC24;
+  }
   .resume_btn {
-    margin-top: 10%;
+    margin-top: 0;
   }

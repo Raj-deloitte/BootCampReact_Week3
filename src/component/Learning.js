@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Learning.css";
 import LearningCard from "./LearningCard";
 
@@ -9,21 +9,27 @@ const Learning = () => {
       url: "./asset/Learning1.svg",
       title: "Python Crash Course",
       desc: "20. Object-oriented Programming on Dart",
+      progress: 20,
+      total: 40
+    },
+    {
+      id: 11,
+      url: "./asset/Learning2.svg",
+      title: "Android Development",
+      desc: "10. Working with loops on Swift with Proj",
+      progress: 10,
+      total: 40
     },
     {
       id: 11,
       url: "./asset/Learning2.svg",
       title: "Android Development",
       desc: "10. Working with loops on Swift",
-    },
-    {
-      id: 11,
-      url: "./asset/Learning2.svg",
-      title: "Android Development",
-      desc: "10. Working with loops on Swift",
+      progress: 10,
+      total: 40
     },
   ];
-  const [enrolledCourses, setEnrolledCourses] = useState([]);
+  // const [enrolledCourses, setEnrolledCourses] = useState([]);
   return (
     <>
       <div className="Learning_container">
