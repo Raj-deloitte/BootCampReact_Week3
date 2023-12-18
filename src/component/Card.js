@@ -5,7 +5,8 @@ import Button from "./Button";
 const Card = (props) => {
   const [isEnrolled, setIsEnrolled] = useState(false);
   const handleEnroll = () => {
-    setIsEnrolled(!isEnrolled);
+    // setIsEnrolled(!isEnrolled);
+    setIsEnrolled(true);
     props.enroll(props.id);
   };
   let overlay_text = `overlay_text ${props.seat}`;
