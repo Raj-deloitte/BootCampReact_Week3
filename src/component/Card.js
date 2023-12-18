@@ -1,27 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Card.css";
 import Button from "./Button";
 
 const Card = (props) => {
-  const [isEnrolled, setIsEnrolled] = useState(false);
+  // const [isEnrolled, setIsEnrolled] = useState(false);
   const handleEnroll = () => {
-    // setIsEnrolled(!isEnrolled);
-    setIsEnrolled(true);
+    // setIsEnrolled(true);
     props.enroll(props.id);
   };
+
   let overlay_text = `overlay_text ${props.seat}`;
   return (
     <>
       <div className="card_container">
         <img
           src="./asset/recommend.svg"
-          alt="course_pic"
+          alt="code with harry"
           className="course_img"
         />
         <div className={overlay_text}>Seats Left : {props.number} of 30</div>
 
         <div className="course_title">
-          Java Tutorial for Begineers: <br></br>Learn Core
+          {props.title}: <br></br>
+          {props.subtitle}
         </div>
         <div className="course_row3">
           <div className="course_date">Updated on 04/12/2020</div>
@@ -44,8 +45,13 @@ const Card = (props) => {
             </div>
           </div>
           <div>
-            <Button type={props.type} onClick={handleEnroll} disabled={isEnrolled}>
-              {isEnrolled ? "Enrolled" : "Enroll"}
+            <Button
+              key={props.key}
+              type={props.type}
+              onClick={handleEnroll}
+              disabled={props.isEnrolled}
+            >
+              {props.isEnrolled ? "Enrolled" : "Enroll"}
             </Button>
           </div>
         </div>

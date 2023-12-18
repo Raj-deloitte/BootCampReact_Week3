@@ -1,41 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Recommended.css";
 import "./Card";
 import Card from "./Card";
 
-const initialcourses = [
-  { id: "01", type: "success", seat: "available", number: 20 },
-  { id: "02", type: "success", seat: "limited", number: 10 },
-  { id: "03", type: "error", seat: "over", number: 0 },
-  { id: "04", type: "success", seat: "available", number: 20 },
-  { id: "05", type: "success", seat: "limited", number: 10 },
-  { id: "06", type: "error", seat: "over", number: 0 },
-];
-const Recommended = () => {
-  const [courses, setCourses] = useState(initialcourses);
-  const [sort, setSort] = useState(true);
-
-  const handleFilter = () => {
-    console.log("clicked");
-    if (sort) {
-      const filteredCourses = [...courses].sort((a, b) => b.number - a.number);
-      setCourses(filteredCourses);
-      setSort(!sort);
-    }
-    if (!sort) {
-      setCourses(initialcourses);
-      setSort(!sort);
-    }
-  };
-  const enroll = (courseId) => {
-    setCourses((prevCourses) =>
-      prevCourses.map((course) =>
-        course.id === courseId
-          ? { ...course, number: Math.max(0, course.number - 1) }
-          : course
-      )
-    );
-  };
+const Recommended = ({ initialcourses, handleFilter, enroll }) => {
   return (
     <>
       <div className="recommend">
@@ -43,12 +11,13 @@ const Recommended = () => {
           <h2>Recommended For You</h2>
           <img
             src="./asset/Filter.svg"
+            alt="pic of course"
             onClick={handleFilter}
             className="filter"
           ></img>
         </div>
         <div className="recommend_container">
-          {courses.map((course, index) => (
+          {initialcourses.map((course, index) => (
             <Card key={index} {...course} enroll={enroll} />
           ))}
         </div>

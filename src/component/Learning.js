@@ -2,34 +2,13 @@ import React from "react";
 import "./Learning.css";
 import LearningCard from "./LearningCard";
 
-const Learning = () => {
-  let initialaddedCourse = [
-    {
-      id: 10,
-      url: "./asset/Learning1.svg",
-      title: "Python Crash Course",
-      desc: "20. Object-oriented Programming on Dart",
-      progress: 20,
-      total: 40
-    },
-    {
-      id: 11,
-      url: "./asset/Learning2.svg",
-      title: "Android Development",
-      desc: "10. Working with loops on Swift with Proj",
-      progress: 10,
-      total: 40
-    },
-    {
-      id: 11,
-      url: "./asset/Learning2.svg",
-      title: "Android Development",
-      desc: "10. Working with loops on Swift",
-      progress: 10,
-      total: 40
-    },
-  ];
-  // const [enrolledCourses, setEnrolledCourses] = useState([]);
+const Learning = ({ initialcourses }) => {
+  const totalEnroll = initialcourses.length;
+  console.log(totalEnroll);
+ 
+  const existingEnrolled= initialcourses.filter(c=>c.isEnrolled);
+  const courseToDisplay= existingEnrolled.slice(0,2);
+  console.log(courseToDisplay);
   return (
     <>
       <div className="Learning_container">
@@ -38,18 +17,16 @@ const Learning = () => {
             <div className="c_learning">Continue Learning</div>
             <div className="see_all">See All</div>
           </div>
-          {
-            (initialaddedCourse = initialaddedCourse
-              .slice(0, 2)
-              .map((course, index) => <LearningCard key={index} {...course} />))
-          }
+          {courseToDisplay.map((course,index)=>(
+            <LearningCard key={index} {...course} />
+          ))}
         </div>
         <div className="right_section">
           <div className="status">Status</div>
           <div className="status_list">
             <div className="status_row">
               <img src="./asset/Status1.svg" alt=""></img>
-              <div className="status_col2">03</div>
+              <div className="status_col2">{totalEnroll}</div>
               <div className="status_col3">
                 Courses<br></br>Pending
               </div>
