@@ -18,13 +18,11 @@ const Recommended = () => {
   const handleFilter = () => {
     console.log("clicked");
     if (sort) {
-      console.log("entererd if st");
       const filteredCourses = [...courses].sort((a, b) => b.number - a.number);
       setCourses(filteredCourses);
       setSort(!sort);
     }
     if (!sort) {
-      console.log("entered false sorting");
       setCourses(initialcourses);
       setSort(!sort);
     }

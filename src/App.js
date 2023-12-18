@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Explore from "./component/Explore";
 import Learning from "./component/Learning";
@@ -12,7 +13,7 @@ function App() {
         <SideBar />
         <div className="main-container">
           <Explore />
-          <Learning />
+          <Learning/>
           <Recommended />
         </div>
       </div>

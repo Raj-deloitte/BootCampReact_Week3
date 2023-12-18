@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Learning.css";
-import Button from "./Button";
+import LearningCard from "./LearningCard";
 
-export default function Learning() {
+const Learning = () => {
+  let initialaddedCourse = [
+    {
+      id: 10,
+      url: "./asset/Learning1.svg",
+      title: "Python Crash Course",
+      desc: "20. Object-oriented Programming on Dart",
+    },
+    {
+      id: 11,
+      url: "./asset/Learning2.svg",
+      title: "Android Development",
+      desc: "10. Working with loops on Swift",
+    },
+    {
+      id: 11,
+      url: "./asset/Learning2.svg",
+      title: "Android Development",
+      desc: "10. Working with loops on Swift",
+    },
+  ];
+  const [enrolledCourses, setEnrolledCourses] = useState([]);
   return (
     <>
       <div className="Learning_container">
@@ -11,62 +32,11 @@ export default function Learning() {
             <div className="c_learning">Continue Learning</div>
             <div className="see_all">See All</div>
           </div>
-          <div className="learning_card">
-            <div>
-              <img
-                src="./asset/Learning1.svg"
-                alt="logo"
-                className="learning_1"
-              />
-            </div>
-            <div className="learning_col2">
-              <div className="learning_col2_row1">
-                <div className="learning_col2_row1_heading">
-                  Python Crash Course
-                </div>
-                <div className="learning_col2_row1_para">
-                  20. Object-oriented Programming on Dart
-                </div>
-              </div>
-              <div className="learning_col2_row2">
-                <div>20/40 Lessons</div>
-                <div>
-                  <hr></hr>
-                </div>
-              </div>
-            </div>
-            <div className="resume_btn">
-              <Button type="success">Resume</Button>
-            </div>
-          </div>
-          <div className="learning_card">
-            <div>
-              <img
-                src="./asset/Learning2.svg"
-                alt="logo"
-                className="learning_1"
-              />
-            </div>
-            <div className="learning_col2">
-              <div className="learning_col2_row1">
-                <div className="learning_col2_row1_heading">
-                  Android Development
-                </div>
-                <div className="learning_col2_row1_para">
-                  10. Working with loops on Swift
-                </div>
-              </div>
-              <div className="learning_col2_row2">
-                <div>10/40 Lessons</div>
-                <div>
-                  <hr></hr>
-                </div>
-              </div>
-            </div>
-            <div className="resume_btn">
-              <Button type="success">Resume</Button>
-            </div>
-          </div>
+          {
+            (initialaddedCourse = initialaddedCourse
+              .slice(0, 2)
+              .map((course, index) => <LearningCard key={index} {...course} />))
+          }
         </div>
         <div className="right_section">
           <div className="status">Status</div>
@@ -74,21 +44,28 @@ export default function Learning() {
             <div className="status_row">
               <img src="./asset/Status1.svg" alt=""></img>
               <div className="status_col2">03</div>
-              <div className="status_col3">Courses<br></br>Pending</div>
+              <div className="status_col3">
+                Courses<br></br>Pending
+              </div>
             </div>
             <div className="status_row">
               <img src="./asset/Status2.svg" alt=""></img>
               <div className="status_col2">12</div>
-              <div className="status_col3">Courses<br></br>Completed</div>
+              <div className="status_col3">
+                Courses<br></br>Completed
+              </div>
             </div>
             <div className="status_row">
               <img src="./asset/Status3.svg" alt=""></img>
               <div className="status_col2">22</div>
-              <div className="status_col3">Assesments<br></br>Completed</div>
+              <div className="status_col3">
+                Assesments<br></br>Completed
+              </div>
             </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
+export default Learning;
