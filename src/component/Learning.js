@@ -2,11 +2,13 @@ import React from "react";
 import "./Learning.css";
 import LearningCard from "../UI/LearningCard";
 
-const Learning = ({ initialcourses }) => {
-  const existingEnrolled = initialcourses.filter((c) => c.isEnrolled);
+const Learning = ({ courses }) => {
+  const existingEnrolled = courses.filter((c) => c.isEnrolled);
   const totalEnroll = existingEnrolled.length;
+  const completed = existingEnrolled.filter((c) => c.isCompleted);
+  const totalCompleted = completed.length;
   const courseToDisplay = existingEnrolled.slice(0, 2);
-  // console.log(courseToDisplay);
+
   return (
     <>
       <div className="Learning_container">
@@ -31,7 +33,7 @@ const Learning = ({ initialcourses }) => {
             </div>
             <div className="status_row">
               <img src="./asset/Status2.svg" alt=""></img>
-              <div className="status_col2">12</div>
+              <div className="status_col2">{totalCompleted}</div>
               <div className="status_col3">
                 Courses<br></br>Completed
               </div>

@@ -2,22 +2,20 @@ import React, { useState } from "react";
 import Explore from "../component/Explore";
 import Learning from "../component/Learning";
 import Recommended from "../component/Recommended";
-import initialcourses from "../mockData/Couses.json";
+import { useData } from "../mockData/DataContext";
 
 const Home = () => {
-  const [courses, setCourses] = useState(initialcourses.data);
+  const { courses, setCourses } = useData();
   const [sort, setSort] = useState(true);
 
   const handleFilter = () => {
     if (sort) {
       const filteredCourses = [...courses].sort((a, b) => b.number - a.number);
       setCourses(filteredCourses);
-      console.log("clicked filter once");
       setSort(!sort);
     }
     if (!sort) {
-      setCourses(initialcourses.data);
-      console.log("clicked filter twice");
+      setCourses(useData.data);
       setSort(!sort);
     }
   };
@@ -30,17 +28,16 @@ const Home = () => {
       }
     });
     setCourses(abc);
-    // console.log(abc);
+    
   };
   return (
     <div>
       <Explore />
-      <Learning initialcourses={courses} />
+      <Learning courses={courses} />
       <Recommended
-        initialcourses={courses}
+        courses={courses}
         handleFilter={handleFilter}
         enroll={enroll}
-        setCourses={setCourses}
       />
     </div>
   );

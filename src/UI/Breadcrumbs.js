@@ -14,7 +14,9 @@ export default function BasicBreadcrumbs() {
       </Button>
 
       <Breadcrumbs aria-label="breadcrumb" separator=">" color="#86bc24">
-        <Link  style={{textDecoration: 'none' , color:'#86bc24'}}  to="/"><b>Home</b></Link>
+        <Link style={{ textDecoration: "none", color: "#86bc24" }} to="/">
+          <b>Home</b>
+        </Link>
         <Typography color="text.primary">Course Details</Typography>
       </Breadcrumbs>
     </div>

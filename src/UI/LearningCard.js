@@ -29,7 +29,7 @@ const LearningCard = (props) => {
           </div>
         </div>
         <div className="resume_btn">
-         <Link to="/course" > <Button type="success">Resume</Button></Link>
+        <Link to={"/course/" + props.id}><Button type="success">Resume</Button></Link>
         </div>
       </div>
     </>

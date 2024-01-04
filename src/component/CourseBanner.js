@@ -7,14 +7,14 @@ const CourseBanner = () => {
   useEffect(() => {
     setTimeout(() => {
       setClip(false);
-    }, 3000);
+    }, 2000);
   }, [clip]);
-
+  // console.log(initialcourses);
   return (
     <div className="course_banner">
       <img src="./asset/Banner.svg" alt="banner_image" />
       <div className="course_title">
-        <h1>Selenium WebDriver with Java from Basics till Expert Level</h1>
+        <h1></h1>
         <CopyToClipboard
           text="Selenium WebDriver with Java from Basics till Expert Level"
           onCopy={() => setClip(true)}
@@ -31,7 +31,7 @@ const CourseBanner = () => {
           <img src="./asset/duration.svg" alt="duration"></img>
           <div className="left_days">
             Course Duration
-            <h6>40 Days</h6>
+            <h6>Days</h6>
           </div>
         </div>
         <div className="right_portion">

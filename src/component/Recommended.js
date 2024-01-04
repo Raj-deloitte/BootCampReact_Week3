@@ -3,7 +3,7 @@ import "./Recommended.css";
 // import "./Card";
 import Card from "../UI/Card.js";
 
-const Recommended = ({ initialcourses, handleFilter, enroll }) => {
+const Recommended = ({ courses, handleFilter, enroll }) => {
   return (
     <>
       <div className="recommend">
@@ -17,7 +17,7 @@ const Recommended = ({ initialcourses, handleFilter, enroll }) => {
           ></img>
         </div>
         <div className="recommend_container">
-          {initialcourses.map((course, index) => (
+          {courses.map((course, index) => (
             <Card key={index} {...course} enroll={enroll} />
           ))}
         </div>

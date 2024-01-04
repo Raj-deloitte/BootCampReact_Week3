@@ -1,12 +1,12 @@
 import React from "react";
 import "./Card.css";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
-  // const [isEnrolled, setIsEnrolled] = useState(false);
   const handleEnroll = () => {
-    // setIsEnrolled(true);
     props.enroll(props.id);
+    console.log(props.id);
   };
 
   let overlay_text = `overlay_text ${props.seat}`;
@@ -45,14 +45,17 @@ const Card = (props) => {
             </div>
           </div>
           <div>
-            <Button
-              key={props.id}
-              type={props.type}
-              onClick={handleEnroll}
-              disabled={props.isEnrolled}
-            >
-              {props.isEnrolled ? "Enrolled" : "Enroll"}
-            </Button>
+            <Link to={"/course/" + props.id}>
+              <Button
+                key={props.id}
+                type={props.type}
+                onClick={handleEnroll}
+                isEnrolled={props.isEnrolled}
+                seat={props.seat}
+              >
+                {props.isEnrolled ? "View Details" : "Enroll"}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

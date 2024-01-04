@@ -5,23 +5,26 @@ import Home from "./pages/Home";
 import NavBar from "./component/NavBar";
 import SideBar from "./component/SideBar";
 import CourseDetails from "./pages/CourseDetails";
+import { DataProvider } from "./mockData/DataContext";
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <NavBar />
-        <div className="trial" style={{ display: "flex" }}>
-          <SideBar />
-          <div className="main-container">
-            <Routes>
-              <Route exact path="/" element={<Home/>}></Route>
-              <Route path="/course" element={<CourseDetails />}></Route>
-            </Routes>
+    <DataProvider>
+      <Router>
+        <div className="app">
+          <NavBar />
+          <div className="trial" style={{ display: "flex" }}>
+            <SideBar />
+            <div className="main-container">
+              <Routes>
+                <Route exact path="/" element={<Home />}></Route>
+                <Route path="/course/:id" element={<CourseDetails />}></Route>
+              </Routes>
+            </div>
           </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </DataProvider>
   );
 }
 
