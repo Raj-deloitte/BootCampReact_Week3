@@ -1,7 +1,7 @@
 import React from "react";
 import "./Recommended.css";
-import "./Card";
-import Card from "./Card";
+// import "./Card";
+import Card from "../UI/Card.js";
 
 const Recommended = ({ initialcourses, handleFilter, enroll }) => {
   return (

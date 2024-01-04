@@ -11,7 +11,8 @@
       "type": "success",
       "seat": "available",
       "number": 20,
-      "isEnrolled": false
+      "isEnrolled": false,
+      "isCompleted": false
     },
     {
       "id": "02",
@@ -24,7 +25,8 @@
       "type": "success",
       "seat": "limited",
       "number": 10,
-      "isEnrolled": false
+      "isEnrolled": false,
+      "isCompleted": false
     },
     {
       "id": "03",
@@ -37,7 +39,8 @@
       "type": "error",
       "seat": "over",
       "number": 0,
-      "isEnrolled": false
+      "isEnrolled": false,
+      "isCompleted": false
     },
     {
       "id": "04",
@@ -50,7 +53,8 @@
       "type": "success",
       "seat": "available",
       "number": 20,
-      "isEnrolled": false
+      "isEnrolled": false,
+      "isCompleted": false
     },
     {
       "id": "05",
@@ -63,7 +67,8 @@
       "type": "success",
       "seat": "limited",
       "number": 10,
-      "isEnrolled": false
+      "isEnrolled": false,
+      "isCompleted": false
     },
     {
       "id": "06",
@@ -76,7 +81,8 @@
       "type": "error",
       "seat": "over",
       "number": 0,
-      "isEnrolled": true
+      "isEnrolled": true,
+      "isCompleted": false
     },
     {
       "id": "07",
@@ -89,7 +95,8 @@
       "type": "error",
       "seat": "over",
       "number": 0,
-      "isEnrolled": true
+      "isEnrolled": true,
+      "isCompleted": false
     },
 
     {
@@ -103,7 +110,8 @@
       "type": "error",
       "seat": "over",
       "number": 0,
-      "isEnrolled": true
+      "isEnrolled": false,
+      "isCompleted": false
     }
   ]
 }

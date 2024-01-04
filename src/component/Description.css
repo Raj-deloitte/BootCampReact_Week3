@@ -1,0 +1,17 @@
+.full_description {
+  background-color: #fff;
+  width: 65vw;
+  height: auto;
+  overflow: hidden;
+  margin: 20px;
+  transition: height 0.3s ease;
+  padding: 25px;
+  border-radius: 5px;
+
+  p {
+    margin-top: 1.5rem;
+  }
+  ul li {
+    margin-top: 1.5rem;
+  }
+}

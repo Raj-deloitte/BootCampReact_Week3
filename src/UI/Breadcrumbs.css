@@ -1,0 +1,8 @@
+.breadcrumbs {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 55vw;
+  font-weight: bolder;
+}

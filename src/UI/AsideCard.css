@@ -1,0 +1,16 @@
+.courseDetailCard2 {
+  width: 20vw;
+  height: auto;
+  margin: 20px;
+  padding: 35px;
+  border-radius: 5px;
+  background-color: #ffff;
+}
+.aside_card_row2 {
+  display: flex;
+  align-items: center;
+  line-height: 3rem;
+  i {
+    margin-right: 1rem;
+  }
+}

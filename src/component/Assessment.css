@@ -1,0 +1,31 @@
+.accordion_section {
+  background-color: #fff;
+  margin: 20px;
+  width: 65vw;
+  padding: 20px;
+  border-radius: 5px;
+}
+.accord {
+  height: 50vh;
+}
+.accordion_item{
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.accordion_header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c9fbca; /* Green background for accordion header */
+  padding: 10px;
+  border-radius: 5px;
+}
+.header_content {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lock_icon {
+  margin-right: 10px; /* Adjust the margin between the lock icon and text */
+}

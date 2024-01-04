@@ -1,7 +1,6 @@
 import React from "react";
 import "./Explore.css";
-import Button from "./Button";
-
+import Button from "../UI/Button";
 
 export default function Explore() {
   return (
@@ -13,10 +12,11 @@ export default function Explore() {
             Choose from a list of online video courses with new additions
             published every month
           </h6>
-          <Button type="success"
-           //onClick={() => console.log('Primary Button Clicked')}
-           >
-          Explore Now
+          <Button
+            type="success"
+            //onClick={() => console.log('Primary Button Clicked')}
+          >
+            Explore Now
           </Button>
         </div>
         <div className="right-side">

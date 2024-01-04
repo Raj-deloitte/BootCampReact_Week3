@@ -46,7 +46,7 @@ const Card = (props) => {
           </div>
           <div>
             <Button
-              key={props.key}
+              key={props.id}
               type={props.type}
               onClick={handleEnroll}
               disabled={props.isEnrolled}

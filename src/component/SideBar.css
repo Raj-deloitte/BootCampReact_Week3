@@ -1,14 +1,12 @@
 .side-navbar {
-  width: 80px;
-  height: 100%;
   background-color: white;
+  width: 80px;
+  /* height: 100vh; */
   color: black;
 }
-
 .side-navbar.expanded {
   width: 12%;
 }
-
 .side-navbar .icon {
   cursor: pointer;
 }
@@ -30,7 +28,12 @@
 /* SideNavbar.css - Sticky position when scrolled */
 @media screen and (min-width: 768px) {
   .side-navbar {
-    position: fixed;
-    top: 80px;
+    position: sticky;
+    height: 250vh;
+  }
+}
+@media screen and (max-height: 101vh) {
+  .side-navbar {
+    height: 500vh;
   }
 }

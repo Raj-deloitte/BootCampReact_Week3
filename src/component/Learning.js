@@ -1,14 +1,12 @@
 import React from "react";
 import "./Learning.css";
-import LearningCard from "./LearningCard";
+import LearningCard from "../UI/LearningCard";
 
 const Learning = ({ initialcourses }) => {
-  const totalEnroll = initialcourses.length;
-  console.log(totalEnroll);
- 
-  const existingEnrolled= initialcourses.filter(c=>c.isEnrolled);
-  const courseToDisplay= existingEnrolled.slice(0,2);
-  console.log(courseToDisplay);
+  const existingEnrolled = initialcourses.filter((c) => c.isEnrolled);
+  const totalEnroll = existingEnrolled.length;
+  const courseToDisplay = existingEnrolled.slice(0, 2);
+  // console.log(courseToDisplay);
   return (
     <>
       <div className="Learning_container">
@@ -17,7 +15,7 @@ const Learning = ({ initialcourses }) => {
             <div className="c_learning">Continue Learning</div>
             <div className="see_all">See All</div>
           </div>
-          {courseToDisplay.map((course,index)=>(
+          {courseToDisplay.map((course, index) => (
             <LearningCard key={index} {...course} />
           ))}
         </div>

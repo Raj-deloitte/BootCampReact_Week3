@@ -1,6 +1,7 @@
 import React from "react";
 import "./LearningCard.css";
 import Button from "./Button";
+import { Link } from 'react-router-dom';
 
 const LearningCard = (props) => {
   const percentage = (props.progress / props.total) * 100;
@@ -28,7 +29,7 @@ const LearningCard = (props) => {
           </div>
         </div>
         <div className="resume_btn">
-          <Button type="success">Resume</Button>
+         <Link to="/course" > <Button type="success">Resume</Button></Link>
         </div>
       </div>
     </>
