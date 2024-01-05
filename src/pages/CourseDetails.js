@@ -18,7 +18,7 @@ const CourseDetails = () => {
     <>
       <BreadCrumbs />
       <div className="course_detail">
-        <CourseBanner />
+        <CourseBanner course={selectedCourse} />
         <CourseDetailCard />
       </div>
       <div className="course_detail">

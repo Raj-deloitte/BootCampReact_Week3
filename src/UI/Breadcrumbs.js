@@ -9,9 +9,12 @@ import { Link } from "react-router-dom";
 export default function BasicBreadcrumbs() {
   return (
     <div className="breadcrumbs">
-      <Button type="outline_success">
-        <i className="fa-solid fa-caret-left"></i>Back to Home
-      </Button>
+      <Link to="/" style={{textDecoration:'none'}}>
+        {" "}
+        <Button type="outline_success">
+          <i className="fa-solid fa-caret-left"></i>Back to Home
+        </Button>
+      </Link>
 
       <Breadcrumbs aria-label="breadcrumb" separator=">" color="#86bc24">
         <Link style={{ textDecoration: "none", color: "#86bc24" }} to="/">

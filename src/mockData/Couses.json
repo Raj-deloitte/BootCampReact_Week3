@@ -18,6 +18,7 @@
   {
     "id": "02",
     "url": "./asset/Learning2.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Java Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift with Proj",
@@ -33,6 +34,7 @@
   {
     "id": "03",
     "url": "./asset/Learning2.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Java Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift",
@@ -48,6 +50,7 @@
   {
     "id": "04",
     "url": "./asset/Learning2.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Java Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift",
@@ -63,6 +66,7 @@
   {
     "id": "05",
     "url": "./asset/Learning2.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Java Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift",
@@ -78,6 +82,7 @@
   {
     "id": "06",
     "url": "./asset/Learning1.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Python Crash Course",
     "subtitle": "Learn Core",
     "desc": "20. Object-oriented Programming on Dart",
@@ -93,6 +98,7 @@
   {
     "id": "07",
     "url": "./asset/Learning2.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Android Development",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift with Proj",
@@ -109,6 +115,7 @@
   {
     "id": "08",
     "url": "./asset/Learning2.svg",
+    "banner": "./asset/Banner.svg",
     "title": "Java Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift with Proj",

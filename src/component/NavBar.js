@@ -13,7 +13,9 @@ export default function NavBar() {
         </div>
         <div className="profile_image"></div>
         <div className="user">
-          <div><b>John Doe</b></div>
+          <div>
+            <b>John Doe</b>
+          </div>
           <div className="text_color">jodoe@deloitte.com</div>
         </div>
       </div>
