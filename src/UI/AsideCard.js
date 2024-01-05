@@ -13,19 +13,19 @@ const AsideCard = () => {
         </div>
         <div className="aside_card_row2">
           <i className="fa-solid fa-check"></i>
-          <div>Generic Programming </div>
+          <div>Sequential Collection </div>
         </div>
         <div className="aside_card_row2">
           <i className="fa-solid fa-check"></i>
-          <div>Generic Programming </div>
+          <div>Classic Data Structure</div>
         </div>
         <div className="aside_card_row2">
           <i className="fa-solid fa-check"></i>
-          <div>Generic Programming </div>
+          <div>Associative Collection</div>
         </div>
         <div className="aside_card_row2">
           <i className="fa-solid fa-check"></i>
-          <div>Generic Programming </div>
+          <div>Sorting and searching algorithm </div>
         </div>
       
     </div>

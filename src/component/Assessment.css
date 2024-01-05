@@ -15,7 +15,7 @@
 .accordion_header {
   justify-content: space-between;
   align-items: center;
-  background-color: #c9fbca; /* Green background for accordion header */
+  background-color:#F2F7F2; /* Green background for accordion header */
   padding: 10px;
   border-radius: 5px;
 }

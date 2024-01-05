@@ -37,7 +37,7 @@
 .left_portion {
   display: flex;
   color: #808080;
-  width: 14%;
+  width: 15%;
   justify-content: space-between;
   /* background-color: pink; */
   padding: 10px;
@@ -58,7 +58,7 @@
 }
 .right_portion {
   display: flex;
-  width: 10.5vw;
+  width: 17%;
   padding: 0 10px 0 10px;
   align-items: center;
   justify-content: space-between;
@@ -67,6 +67,7 @@
   }
   h6 {
     color: grey;
-    margin-top:10px;
+    margin-top: 12px;
+    font-size: 0.8rem;
   }
 }

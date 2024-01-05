@@ -3,7 +3,7 @@
     "id": "01",
     "url": "./asset/Learning1.svg",
     "banner": "./asset/Banner.svg",
-    "title": "Java Tutorial for Beginners ",
+    "title": "React Tutorial for Beginners ",
     "subtitle": "Learn Core",
     "desc": "20. Object-oriented Programming on Dart",
     "progress": 0,
@@ -29,13 +29,13 @@
     "number": 10,
     "isEnrolled": false,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 20
   },
   {
     "id": "03",
     "url": "./asset/Learning2.svg",
     "banner": "./asset/Banner.svg",
-    "title": "Java Tutorial for Begineers",
+    "title": "Spring Boot Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift",
     "progress": 0,
@@ -45,13 +45,13 @@
     "number": 0,
     "isEnrolled": false,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 30
   },
   {
     "id": "04",
     "url": "./asset/Learning2.svg",
     "banner": "./asset/Banner.svg",
-    "title": "Java Tutorial for Begineers",
+    "title": "NextJs Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift",
     "progress": 0,
@@ -61,13 +61,13 @@
     "number": 20,
     "isEnrolled": false,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 20
   },
   {
     "id": "05",
     "url": "./asset/Learning2.svg",
     "banner": "./asset/Banner.svg",
-    "title": "Java Tutorial for Begineers",
+    "title": "Javascript Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift",
     "progress": 0,
@@ -77,7 +77,7 @@
     "number": 10,
     "isEnrolled": false,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 40
   },
   {
     "id": "06",
@@ -93,7 +93,7 @@
     "number": 0,
     "isEnrolled": true,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 30
   },
   {
     "id": "07",
@@ -109,14 +109,14 @@
     "number": 0,
     "isEnrolled": true,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 20
   },
 
   {
     "id": "08",
     "url": "./asset/Learning2.svg",
     "banner": "./asset/Banner.svg",
-    "title": "Java Tutorial for Begineers",
+    "title": "VueJs Tutorial for Begineers",
     "subtitle": "Learn Core",
     "desc": "10. Working with loops on Swift with Proj",
     "progress": 0,
@@ -126,6 +126,6 @@
     "number": 0,
     "isEnrolled": false,
     "isCompleted": false,
-    "courseDuration": 10
+    "courseDuration": 40
   }
 ]
